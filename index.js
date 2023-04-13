@@ -17,14 +17,14 @@ function digitalClock() {
         pm = "PM"
     }
 
-    if (s >= 10){
+    if (s > 10){
         seconds.innerHTML = s;
     }else {
         seconds.innerHTML =`0${s}`;
     };
 
 
-    if (m >= 10){
+    if (m > 10){
         minutes.innerHTML = m;
     }else {
         minutes.innerHTML =`0${m}`;
@@ -35,7 +35,7 @@ function digitalClock() {
         h = `0${h}`
     }
     
-    if (h <= 10){
+    if (h > 10){
         hours.innerHTML = h;
     }else {
         hours.innerHTML =`0${h}`;
