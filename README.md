@@ -1,3 +1,9 @@
+
+<picture>
+  <img src="output.jpg">
+</picture>
+
+
 # javascript-digital-clock
 i made this simple and attractive looking UI Digital Clock using JavaScript, Html and CSS
 
