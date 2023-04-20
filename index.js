@@ -6,7 +6,6 @@ const ampm = document.querySelector(".ampm")
 
 let count=0
 function digitalClock() {
-
     let clock = new Date();
     let h = clock.getHours();
     let m = clock.getMinutes();
@@ -23,14 +22,13 @@ function digitalClock() {
         seconds.innerHTML =`0${s}`;
     };
 
-
     if (m > 10){
         minutes.innerHTML = m;
     }else {
         minutes.innerHTML =`0${m}`;
     };
 
-    if(h >= 12){
+    if(h > 12){
         h = h-12;
         h = `0${h}`
     }
@@ -41,19 +39,8 @@ function digitalClock() {
         hours.innerHTML =`0${h}`;
     };
 
-
-
-
-
-    
     console.log("Hello There " + count++ , h, m , s);
-
-
-    hours.innerHTML = h;
     ampm.innerHTML = pm;
-
 };
 
-setInterval(()=>{
-    digitalClock();
-},1000)
+setInterval( () => {digitalClock()},1000);
