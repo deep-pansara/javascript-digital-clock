@@ -33,10 +33,10 @@ function digitalClock() {
         h = `0${h}`
     }
     
-    if (h > 10){
-        hours.innerHTML = h;
-    }else {
+  if (h > 10){
         hours.innerHTML =`0${h}`;
+    }else {
+        hours.innerHTML = h;
     };
 
     console.log("Hello There " + count++ , h, m , s);
